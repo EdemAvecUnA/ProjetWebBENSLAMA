@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Département Informatique – EFREI</title>
+  <title>Département Informatique – EFREI Paris</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e1/Efrei_Logo.svg/1200px-Efrei_Logo.svg.png" alt="Logo EFREI" class="logo" />
         <span class="site-title">Département Informatique</span>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="formations.html">Cours & Formations</a></li>
@@ -29,94 +29,167 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1>Bienvenue au Département Informatique de l'EFREI</h1>
-      <p>Formation d'excellence, innovation et technologies du futur.</p>
-      <a href="formations.html" class="btn-hero">Découvrir nos formations</a>
+      <h1>Façonner les ingénieurs et experts du <span>numérique</span> de demain</h1>
+      <p>Le Département Informatique de l'EFREI Paris forme des experts techniques, innovants et opérationnels, prêts à relever les défis du monde numérique.</p>
+      <a href="formations.html" class="btn btn-primary">Découvrir les formations</a>
+      <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
     </div>
   </section>
 
-  <!-- CAROUSEL -->
-  <section class="carousel-section">
-    <h2>Nos points forts</h2>
-    <div class="carousel">
-      <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80" alt="Programmation" />
-          <p>Programmation avancée</p>
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80" alt="Réseaux" />
-          <p>Réseaux & Cybersécurité</p>
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80" alt="Data" />
-          <p>Data Science & IA</p>
-        </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80" alt="Projets" />
-          <p>Projets collaboratifs</p>
-        </div>
+  <!-- CHIFFRES CLES -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="number">94%</div>
+        <div class="label">Taux de satisfaction étudiants</div>
       </div>
-      <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-      <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-      <div class="carousel-dots" id="carouselDots"></div>
-    </div>
-  </section>
-
-  <!-- PRÉSENTATION -->
-  <section class="presentation">
-    <h2>Le département en bref</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">🎓</div>
-        <h3>Formations de qualité</h3>
-        <p>Des cursus adaptés aux besoins du marché, du Bachelor au Master.</p>
+      <div class="stat-item fade-in">
+        <div class="number">3 000+</div>
+        <div class="label">Diplômés dans le secteur tech</div>
       </div>
-      <div class="card">
-        <div class="card-icon">🔬</div>
-        <h3>Recherche & Innovation</h3>
-        <p>Des laboratoires et projets de recherche à la pointe de la technologie.</p>
+      <div class="stat-item fade-in">
+        <div class="number">150+</div>
+        <div class="label">Entreprises partenaires</div>
       </div>
-      <div class="card">
-        <div class="card-icon">🌍</div>
-        <h3>Ouverture internationale</h3>
-        <p>Des partenariats avec des universités et entreprises du monde entier.</p>
+      <div class="stat-item fade-in">
+        <div class="number">95%</div>
+        <div class="label">Insertion professionnelle</div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stat-item">
-      <span class="stat-number" data-target="1200">0</span>
-      <span class="stat-label">Étudiants</span>
+  <!-- FORMATIONS RAPIDES -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title fade-in">Nos Formations</h2>
+      <p class="section-subtitle fade-in">Du Bachelor au Cycle Ingénieur, des programmes conçus pour l'excellence technique et l'innovation.</p>
+      <div class="formations-grid">
+
+        <div class="formation-card fade-in">
+          <div class="card-header">
+            <div class="card-icon">🎓</div>
+            <div>
+              <h3>Bachelor Informatique</h3>
+              <div class="card-level">Grade de Licence – Bac+3</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Formation généraliste en informatique couvrant le développement, les réseaux, les bases de données et l'IA.</p>
+            <div class="card-tags">
+              <span class="tag">Développement Web</span>
+              <span class="tag">Bases de données</span>
+              <span class="tag">IA</span>
+            </div>
+          </div>
+          <div class="card-footer-link"><a href="formations.html">En savoir plus ▶</a></div>
+        </div>
+
+        <div class="formation-card fade-in">
+          <div class="card-header">
+            <div class="card-icon">🛡️</div>
+            <div>
+              <h3>Bachelor Cybersécurité & Réseaux</h3>
+              <div class="card-level">Grade de Licence – Bac+3</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Spécialisation en sécurité informatique, protection des systèmes, réseaux et gestion des cybermenaces.</p>
+            <div class="card-tags">
+              <span class="tag">Cybersécurité</span>
+              <span class="tag">Réseaux</span>
+              <span class="tag">CTF</span>
+            </div>
+          </div>
+          <div class="card-footer-link"><a href="formations.html">En savoir plus ▶</a></div>
+        </div>
+
+        <div class="formation-card fade-in">
+          <div class="card-header">
+            <div class="card-icon">⚙️</div>
+            <div>
+              <h3>Cycle Ingénieur</h3>
+              <div class="card-level">Diplôme d'Ingénieur – Bac+5</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>4 filières : IT & Logiciels, Data Science, Sécurité & Réseaux, Systèmes Embarqués. Projets de fin d'études et stages en entreprise.</p>
+            <div class="card-tags">
+              <span class="tag">Data Science</span>
+              <span class="tag">DevOps</span>
+              <span class="tag">Embarqué</span>
+            </div>
+          </div>
+          <div class="card-footer-link"><a href="formations.html">En savoir plus ▶</a></div>
+        </div>
+
+      </div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="45">0</span>
-      <span class="stat-label">Enseignants</span>
+  </section>
+
+  <!-- ACTUALITES -->
+  <section class="news-section">
+    <div class="container">
+      <h2 class="section-title section-title-white fade-in">Actualités & Événements</h2>
+      <p class="section-subtitle section-subtitle-white fade-in">Restez informé des dernières nouvelles du département.</p>
+      <div class="news-grid">
+        <div class="news-card fade-in">
+          <div class="news-date">Juin 2025</div>
+          <h3>Journée Portes Ouvertes – Campus Villejuif</h3>
+          <p>Venez découvrir nos locaux, rencontrer les enseignants et échanger avec les étudiants lors de notre JPO annuelle.</p>
+        </div>
+        <div class="news-card fade-in">
+          <div class="news-date">Mai 2025</div>
+          <h3>Conférence IA & Éthique Numérique</h3>
+          <p>Un cycle de conférences animé par des experts de l'industrie et de la recherche sur les enjeux de l'intelligence artificielle.</p>
+        </div>
+        <div class="news-card fade-in">
+          <div class="news-date">Avril 2025</div>
+          <h3>Hackathon Cybersécurité – CTF EFREI</h3>
+          <p>Les équipes étudiantes s'affrontent lors du Capture The Flag annuel organisé par le club Cybersécurité du département.</p>
+        </div>
+      </div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="30">0</span>
-      <span class="stat-label">Années d'existence</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" data-target="98">0</span>
-      <span class="stat-label">% d'insertion professionnelle</span>
+  </section>
+
+  <!-- ACCES RAPIDES -->
+  <section class="quick-access">
+    <div class="container">
+      <h2 class="section-title fade-in">Accès Rapides</h2>
+      <div class="quick-grid">
+        <a href="formations.html" class="quick-card fade-in">
+          <div class="q-icon">🎓</div>
+          <h3>Formations</h3>
+          <p>Parcourir tous nos programmes et modules de formation</p>
+        </a>
+        <a href="contact.html#admissions" class="quick-card fade-in">
+          <div class="q-icon">📋</div>
+          <h3>Admissions</h3>
+          <p>Parcoursup, Puissance Alpha, admissions parallèles</p>
+        </a>
+        <a href="contact.html" class="quick-card fade-in">
+          <div class="q-icon">📞</div>
+          <h3>Contact</h3>
+          <p>Contactez le département et posez vos questions</p>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <nav class="footer-nav">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="formations.html">Formations</a></li>
-        <li><a href="equipe.html">Équipe</a></li>
-        <li><a href="contact.html">À propos / Contact</a></li>
-      </ul>
-    </nav>
-    <p class="footer-copy">&copy; 2025 Département Informatique EFREI – Projet TI402</p>
+    <div class="footer-inner">
+      <p>© 2025 EFREI Paris – Département Informatique</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

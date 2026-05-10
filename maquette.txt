@@ -1,0 +1,78 @@
+========================================
+MAQUETTE – SOURCES & RÉFÉRENCES
+Projet : Site Département Informatique EFREI
+Réalisé par : Adam BEN SLAMA
+========================================
+
+--------------------------------------
+1. CONTENU & INFORMATIONS
+--------------------------------------
+
+Formations Bachelor (Informatique, Cybersécurité, Web & IA) :
+https://www.efrei.fr/programmes/bachelor/
+
+Cycle Ingénieur – Filières (IT, Data Science, Sécurité, Embarqués) :
+https://www.efrei.fr/programmes/cycle-ingenieur/
+
+Admissions (Parcoursup, Puissance Alpha, admissions parallèles) :
+https://www.efrei.fr/admissions/
+
+Campus de Villejuif (adresse, transports Métro L7 & L15) :
+https://www.efrei.fr/campus/
+
+Accréditations (CGE, CTI, EESPIG) :
+https://www.efrei.fr/efrei/accreditations/
+
+Contenu général du site (chiffres clés, clubs, recherche) :
+→ Document interne fourni : Contenu_Site_Département_Informatique.pdf
+
+--------------------------------------
+2. CHARTE GRAPHIQUE
+--------------------------------------
+
+Couleurs, typographie, mise en page, règles UI :
+→ Document interne fourni : Charte_Graphique_Web_Département_Informatique_Efrei.pdf
+
+Google Fonts – Montserrat :
+https://fonts.google.com/specimen/Montserrat
+
+Google Fonts – Open Sans :
+https://fonts.google.com/specimen/Open+Sans
+
+--------------------------------------
+3. IMAGES & MÉDIAS
+--------------------------------------
+
+Logo EFREI (header) :
+https://upload.wikimedia.org/wikipedia/fr/thumb/7/7e/Logo_EFREI.svg/1200px-Logo_EFREI.svg.png
+
+Photos étudiants / campus (Unsplash – libre de droits) :
+https://unsplash.com/s/photos/students-computer
+https://unsplash.com/s/photos/coding
+https://unsplash.com/s/photos/campus
+
+--------------------------------------
+4. TECHNIQUE
+--------------------------------------
+
+Google Maps embed – Campus Villejuif :
+https://maps.google.com
+
+Standards HTML5 / CSS3 :
+https://www.w3.org
+
+MDN Web Docs – IntersectionObserver API (animations scroll) :
+https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API
+
+MDN Web Docs – CSS Grid & Flexbox :
+https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout
+
+--------------------------------------
+5. AUTEUR
+--------------------------------------
+
+Conception, développement et intégration complète :
+Adam BEN SLAMA
+EFREI Paris – Département Informatique – 2025
+
+========================================

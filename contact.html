@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact & À propos – Département Informatique EFREI</title>
+  <title>Contact & Admissions – Département Informatique EFREI</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="header-inner">
       <div class="logo-title">
         <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e1/Efrei_Logo.svg/1200px-Efrei_Logo.svg.png" alt="Logo EFREI" class="logo" />
         <span class="site-title">Département Informatique</span>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="formations.html">Cours & Formations</a></li>
@@ -27,155 +26,129 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero hero-small">
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1>Contact & À propos</h1>
-      <p>Une question ? Contactez-nous !</p>
+      <h1>Contact & <span>Admissions</span></h1>
+      <p>Une question ? Contactez le département ou renseignez-vous sur nos procédures d'admission</p>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
   <section class="contact-section">
     <div class="container">
       <div class="contact-grid">
 
+        <!-- INFOS -->
+        <div class="contact-info">
+          <h2 class="fade-in">Coordonnées du Département</h2>
+          <p class="fade-in">Le campus EFREI Paris est situé à Villejuif, facilement accessible depuis Paris.</p>
+          <ul class="contact-details fade-in">
+            <li>
+              <span class="icon">📍</span>
+              <span>30-32 Avenue de la République, 94800 Villejuif</span>
+            </li>
+            <li>
+              <span class="icon">📞</span>
+              <span>+33 (0)1 46 77 46 77</span>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <span>info-departement@efrei.fr</span>
+            </li>
+            <li>
+              <span class="icon">🚇</span>
+              <span>Métro Ligne 7 – Station Villejuif – Paul Vaillant-Couturier<br/>Future Ligne 15 (Grand Paris Express)</span>
+            </li>
+          </ul>
+
+          <div class="admission-block fade-in" id="admissions">
+            <h3>Procédures d'Admission</h3>
+            <ul>
+              <li>Post-Bac : Parcoursup (Bachelors)</li>
+              <li>Cycle Ingénieur : Concours Puissance Alpha</li>
+              <li>Admissions parallèles Bac+2/3 : dossier direct</li>
+              <li>Alternance : contrat d'apprentissage ou de professionnalisation</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- FORMULAIRE -->
-        <div class="contact-form-wrapper">
-          <h2 class="section-title">Nous contacter</h2>
-          <form id="contactForm" novalidate>
-
+        <div class="contact-form fade-in">
+          <h2>Nous écrire</h2>
+          <form>
             <div class="form-group">
-              <label for="nom">Nom complet *</label>
-              <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" />
-              <span class="err" id="err-nom"></span>
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" placeholder="Votre nom et prénom" />
             </div>
-
             <div class="form-group">
-              <label for="email">Adresse email *</label>
-              <input type="email" id="email" name="email" placeholder="Ex: jean.dupont@efrei.fr" />
-              <span class="err" id="err-email"></span>
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" placeholder="votre@email.com" />
             </div>
-
             <div class="form-group">
-              <label for="sujet">Sujet *</label>
-              <select id="sujet" name="sujet">
+              <label for="sujet">Sujet</label>
+              <select id="sujet">
                 <option value="">-- Choisir un sujet --</option>
-                <option value="formation">Informations sur les formations</option>
-                <option value="admission">Admissions</option>
-                <option value="stage">Stages & Alternance</option>
-                <option value="autre">Autre</option>
+                <option>Renseignements sur les formations</option>
+                <option>Admissions & candidatures</option>
+                <option>Alternance & stages</option>
+                <option>Partenariats entreprises</option>
+                <option>Autre demande</option>
               </select>
-              <span class="err" id="err-sujet"></span>
             </div>
-
             <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
-              <span class="err" id="err-message"></span>
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Votre message..."></textarea>
             </div>
-
-            <button type="submit" class="btn-submit">Envoyer le message</button>
-            <div id="form-success" class="form-success" style="display:none;">
-              ✅ Votre message a bien été envoyé ! Nous vous répondrons rapidement.
-            </div>
-
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
           </form>
         </div>
 
-        <!-- INFOS CONTACT -->
-        <div class="contact-info-wrapper">
-          <h2 class="section-title">Informations</h2>
-
-          <div class="info-card">
-            <span class="info-icon">📍</span>
-            <div>
-              <h4>Adresse</h4>
-              <p>30-32 Avenue de la République<br/>94800 Villejuif, France</p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <span class="info-icon">📞</span>
-            <div>
-              <h4>Téléphone</h4>
-              <p>+33 (0)1 46 77 46 77</p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <span class="info-icon">📧</span>
-            <div>
-              <h4>Email</h4>
-              <p>informatique@efrei.fr</p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <span class="info-icon">🕐</span>
-            <div>
-              <h4>Horaires d'ouverture</h4>
-              <p>Lundi – Vendredi : 8h00 – 18h00</p>
-            </div>
-          </div>
-
-          <!-- CARTE -->
-          <div class="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.4!2d2.3621!3d48.7943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670e4a4c5c5c5%3A0x0!2sEFREI+Paris!5e0!3m2!1sfr!2sfr!4v1680000000000"
-              width="100%"
-              height="200"
-              style="border:0; border-radius:10px;"
-              allowfullscreen=""
-              loading="lazy">
-            </iframe>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- À PROPOS DU PROJET -->
-  <section class="about-section">
+  <!-- FAQ -->
+  <section class="faq-section">
     <div class="container">
-      <h2 class="section-title">À propos du projet</h2>
-      <p class="about-intro">Ce site vitrine a été réalisé dans le cadre du module <strong>TI402 – Programmation Web</strong> à l'EFREI Paris, en HTML5, CSS3 et JavaScript vanilla, sans aucun framework.</p>
+      <h2 class="section-title fade-in">Questions Fréquentes</h2>
+      <p class="section-subtitle fade-in">Les réponses aux questions les plus posées par les candidats.</p>
 
-      <div class="team-grid">
-        <div class="team-member solo">
-          <div class="member-avatar">👨‍💻</div>
-          <h3>Adam BEN SLAMA</h3>
-          <p class="member-role">Développeur unique du projet</p>
-          <p class="member-desc">
-            J'ai réalisé l'intégralité du projet seul : conception de la maquette wireframe, 
-            développement de toutes les pages HTML5, mise en forme CSS3 responsive, 
-            ainsi que toutes les fonctionnalités JavaScript (carousel, validation de formulaire, 
-            animations au scroll, menu burger, compteur de stats...).
-          </p>
-          <div class="member-tags">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-            <span>Wireframe</span>
-          </div>
-        </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question">Quels sont les frais de scolarité à l'EFREI ?</div>
+        <div class="faq-answer">Les frais varient selon la formation et le statut (initial ou alternance). Consultez le site officiel efrei.fr pour les tarifs détaillés et les dispositifs de financement disponibles (bourses, prêts étudiants).</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question">Comment candidater en Cycle Ingénieur ?</div>
+        <div class="faq-answer">L'accès au Cycle Ingénieur se fait via le concours Puissance Alpha (classes prépa) ou par admissions parallèles pour les titulaires d'un Bac+2 ou Bac+3 (BTS, IUT, Licence).</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question">L'alternance est-elle possible dès le Bachelor ?</div>
+        <div class="faq-answer">Oui, les Bachelors proposent des modalités en alternance (contrat d'apprentissage ou de professionnalisation) à partir de la 1ère année selon les programmes.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question">Quels transports desservent le campus de Villejuif ?</div>
+        <div class="faq-answer">Le campus est accessible via le Métro Ligne 7 (station Villejuif – Paul Vaillant-Couturier) et sera prochainement desservi par la Ligne 15 du Grand Paris Express.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-question">Y a-t-il des clubs et associations informatiques ?</div>
+        <div class="faq-answer">Oui ! Le département compte plusieurs clubs actifs : club de programmation, club robotique, club e-sport et club cybersécurité (CTF – Capture The Flag).</div>
       </div>
 
+      <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid #dde4f0;">
+        <p style="font-size:14px; color:#888;">Réalisé par <strong>Adam BEN SLAMA</strong> – EFREI Paris, Département Informatique – 2025</p>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <p>&copy; 2025 Département Informatique – EFREI Paris</p>
+      <p>© 2025 EFREI Paris – Département Informatique</p>
       <nav class="footer-nav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="formations.html">Formations</a></li>
           <li><a href="equipe.html">Équipe</a></li>
-          <li><a href="contact.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
